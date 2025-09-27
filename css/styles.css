@@ -9,7 +9,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Ensure all elements respect box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* Landing page specific styles */
@@ -361,6 +368,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+	/* Global mobile fixes to prevent horizontal scroll */
+	html, body {
+		max-width: 100vw;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+	
+	/* Ensure all containers respect viewport width */
+	.about-main, 
+	.projects-main,
+	main {
+		width: 100%;
+		max-width: 100vw;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+	
 	/* Mobile Navigation - CSS Only */
 	.nav-right ul,
 	.nav-right .nav-menu {
@@ -537,11 +561,43 @@ footer a:hover {
 	nav .nav-left span {
 		font-size: 1rem;
 	}
-
+	
 	/* Mobile Footer */
 	footer {
 		padding: 1rem;
 		font-size: 0.8rem;
+	}
+	
+	/* Ensure text wrapping and prevent overflow */
+	h1, h2, h3, h4, h5, h6, p, span, div, a {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		max-width: 100%;
+	}
+	
+	/* Ensure all images are responsive */
+	img {
+		max-width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+	
+	/* Fix any tables that might overflow */
+	table {
+		width: 100%;
+		max-width: 100%;
+		overflow-x: auto;
+		display: block;
+		white-space: nowrap;
+	}
+	
+	/* Ensure all containers have proper box sizing */
+	.container, .content, .main-content, section, article, aside {
+		max-width: 100%;
+		box-sizing: border-box;
+		padding-left: clamp(1rem, 4vw, 2rem);
+		padding-right: clamp(1rem, 4vw, 2rem);
 	}
 }
 
@@ -1156,12 +1212,20 @@ footer a:hover {
 		height: auto;
 		border-right: none;
 		border-bottom: 1px solid #e0e0e0;
+		border-radius: 0;
+		left: 0;
+		top: 0;
+		box-shadow: none;
+		background: #f8f9fa;
+		margin-bottom: 1rem;
 	}
 	
 	.about-content {
 		margin-left: 0;
 		max-width: 100%;
-		padding: 1.5rem;
+		width: 100%;
+		padding: 1rem;
+		box-sizing: border-box;
 	}
 	
 	.about-section h1 {
@@ -1171,6 +1235,16 @@ footer a:hover {
 	
 	.about-section h2 {
 		font-size: 1.75rem;
+	}
+	
+	/* Ensure cards don't overflow */
+	.intro-card,
+	.content-card {
+		padding: 1.5rem;
+		margin-bottom: 1.5rem;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 	
 	/* Mobile responsive adjustments for images */
@@ -1184,31 +1258,31 @@ footer a:hover {
 		width: 140px;
 		height: 140px;
 		border-width: 3px;
+		max-width: 100%;
+		height: auto;
 	}
 	
 	.image-gallery {
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		grid-template-columns: 1fr;
 		gap: 1rem;
+		width: 100%;
+	}
+	
+	.gallery-item {
+		width: 100%;
+		max-width: 100%;
 	}
 	
 	.gallery-item img {
 		height: 200px;
+		width: 100%;
+		max-width: 100%;
+		object-fit: cover;
 	}
 	
 	.gallery-intro {
 		font-size: 1rem;
 		margin-bottom: 1.5rem;
-	}
-	
-	/* Hide About sidebar on mobile */
-	.about-sidebar {
-		display: none;
-	}
-	
-	.about-content {
-		margin-left: 0;
-		max-width: 100%;
-		padding: 1.5rem;
 	}
 	
 	.skills-grid,
@@ -1230,31 +1304,137 @@ footer a:hover {
 	
 	.skill-table {
 		font-size: 0.85rem;
+		width: 100%;
+		max-width: 100%;
+		overflow-x: auto;
 	}
 	
 	.skill-table th,
 	.skill-table td {
 		padding: 0.75rem 0.5rem;
+		word-break: break-word;
 	}
+}
 	
 	/* Projects Page Responsive */
 	.projects-sidebar {
-		display: none;
+		position: static;
+		width: 100%;
+		height: auto;
+		border-right: none;
+		border-bottom: 1px solid #e0e0e0;
+		border-radius: 0;
+		left: 0;
+		top: 0;
+		box-shadow: none;
+		background: #f8f9fa;
+		margin-bottom: 1rem;
 	}
 	
 	.projects-content {
 		margin-left: 0;
 		max-width: 100%;
-		padding: 1.5rem;
+		width: 100%;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+	
+	.projects-header {
+		margin-bottom: 2rem;
+		text-align: center;
+		padding: 0;
 	}
 	
 	.projects-header h1 {
 		font-size: 2.5rem;
 	}
 	
+	.projects-intro {
+		font-size: 1rem;
+		padding: 0 0.5rem;
+		margin: 0;
+		max-width: 100%;
+	}
+	
 	.projects-grid {
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
+		width: 100%;
+	}
+	
+	.project-section {
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+	
+	.project-card {
+		margin: 0;
+		max-width: 100%;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	/* Fix project card layout on mobile */
+	.project-card {
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+	
+	.project-content {
+		padding: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.project-description {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		word-break: break-word;
+		overflow-wrap: break-word;
+	}
+	
+	.project-tech {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin: 1rem 0;
+	}
+	
+	.tech-tag {
+		font-size: 0.8rem;
+		padding: 0.3rem 0.6rem;
+		word-break: keep-all;
+	}
+	
+	.project-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: flex-start;
+	}
+	
+	.project-link {
+		font-size: 0.85rem;
+		padding: 0.4rem 1rem;
+		min-width: auto;
+		flex: 0 0 auto;
+	}
+	
+	/* Ensure images don't overflow */
+	.project-thumb,
+	.project-image img {
+		max-width: 100%;
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	.project-image {
+		width: 100%;
+		max-width: 100%;
+		height: 150px;
+		overflow: hidden;
+		border-radius: 8px;
+		margin-bottom: 1rem;
 	}
 	
 	.featured-project {
@@ -1265,17 +1445,15 @@ footer a:hover {
 	.featured-project .project-image {
 		flex: none;
 		height: 200px;
+		width: 100%;
 	}
 	
 	.featured-project .project-content {
 		padding: 1.5rem;
+		width: 100%;
+		box-sizing: border-box;
 	}
-	
-	.project-card {
-		margin: 0 auto;
-		max-width: 100%;
-	}
-}
+
 
 /* Tablet responsive for projects */
 @media (max-width: 1024px) {
@@ -1619,5 +1797,41 @@ footer a:hover {
 	.project-links {
 		flex-direction: column;
 		gap: 0.75rem;
+	}
+}
+
+/* Additional mobile fixes to prevent horizontal scroll */
+@media (max-width: 480px) {
+	/* Ultra-mobile specific fixes */
+	.about-content,
+	.projects-content {
+		padding: 0.75rem;
+	}
+	
+	.intro-card,
+	.content-card,
+	.project-card {
+		padding: 1rem;
+		margin: 0.5rem 0;
+	}
+	
+	.about-section h1,
+	.projects-header h1 {
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+	
+	.about-section h2 {
+		font-size: 1.5rem;
+	}
+	
+	.project-description {
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+	
+	.tech-tag {
+		font-size: 0.75rem;
+		padding: 0.25rem 0.5rem;
 	}
 }
