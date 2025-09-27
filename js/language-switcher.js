@@ -219,7 +219,7 @@ class LanguageSwitcher {
             
             // Gallery section
             aboutGalleryTitle: "Galería Personal",
-            aboutGalleryIntro: "Un vistazo a mi mundo a través de algunos momentos personales que definen quién soy más allá de lo académico y la tecnología.",
+            aboutGalleryIntro: "Un vistazo a mi más personal a través de algunos momentos que definen quién soy más allá de lo académico y la tecnología.",
             
             // Interests section
             aboutInterestsTitle: "Intereses y Pasiones",
