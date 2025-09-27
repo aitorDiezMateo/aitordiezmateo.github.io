@@ -66,13 +66,6 @@ class LanguageSwitcher {
             element.removeAttribute('data-original-text');
         });
 
-        // Restore page title
-        const titleElement = document.querySelector('title');
-        if (titleElement && titleElement.hasAttribute('data-original-text')) {
-            titleElement.textContent = titleElement.getAttribute('data-original-text');
-            titleElement.removeAttribute('data-original-text');
-        }
-
         // Restore CV link to English version
         const cvLink = document.querySelector('[data-cv-link]');
         if (cvLink && cvLink.hasAttribute('data-original-href')) {
@@ -105,15 +98,6 @@ class LanguageSwitcher {
                 }
             }
         });
-
-        // Update page title to Spanish
-        const titleElement = document.querySelector('title');
-        if (titleElement && translations.pageTitle) {
-            if (!titleElement.hasAttribute('data-original-text')) {
-                titleElement.setAttribute('data-original-text', titleElement.textContent);
-            }
-            titleElement.textContent = translations.pageTitle;
-        }
 
         // Update CV link to Spanish version
         const cvLink = document.querySelector('[data-cv-link]');
