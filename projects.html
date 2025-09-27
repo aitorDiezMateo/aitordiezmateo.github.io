@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="icon" href="images/memoji_AitorDiez.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/language-switcher.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <span>Aitor Díez Mateo</span>
+    </div>
+    <div class="nav-right">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <ul class="nav-menu">
+		<li><a href="index.html" data-translate="navHome">Home</a></li>
+        <li><a href="about.html" data-translate="navAbout">About Me</a></li>
+        <li><a href="projects.html" data-translate="navProjects">Projects</a></li>
+        <li class="nav-lang-item">
+          <div class="lang-switcher">
+            <span class="lang-option" data-lang="es">ES</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option active" data-lang="en">EN</span>
+          </div>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="projects-main">
+    <!-- Fixed Sidebar -->
+    <aside class="projects-sidebar">
+      <div class="sidebar-content">
+        <h3 data-translate="projectsNavigation">Projects</h3>
+        <ul class="sidebar-nav">
+          <li><a href="#Building_Heat_Load_Charact_Clustering_Python" data-translate="projectNav1">Building Heat Load Analysis</a></li>
+          <li><a href="#Predictions-Changepoint" data-translate="projectNav2">Predictions Changepoint</a></li>
+          <li><a href="#Simpsons-DaVinci" data-translate="projectNav3">Simpsons DaVinci</a></li>
+          <li><a href="#Movie_Recommender" data-translate="projectNav4">Movie Recommender</a></li>
+          <li><a href="#Home-Credit-Default-Risk" data-translate="projectNav5">Home Credit Default Risk</a></li>
+          <li><a href="#pyspark-demos" data-translate="projectNav6">PySpark Demos</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="projects-content">
+      <section class="projects-header">
+        <h1 data-translate="projectsTitle">My Projects</h1>
+        <p class="projects-intro" data-translate="projectsIntro">
+          A collection of my work spanning machine learning and data science. 
+          Each project represents a learning journey and demonstrates different aspects of my technical skills.
+        </p>
+      </section>
+
+        <!-- Project 1: Building Heat Load Analysis -->
+      <section id="Building_Heat_Load_Charact_Clustering_Python" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/building_heat_load_charact.jpg" alt="Building Heat Load Characterization">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project1Title">Building Heat Load Analysis</h2>
+            <p class="project-description" data-translate="project1Description">
+              Python reimplementation of a research-grade pipeline for building heat-load characterization, migrating an R methodology to an HPC-ready, reproducible Snakemake workflow. It models hourly energy behavior with changepoint signatures, clusters typical daily patterns with K-means, and trains CART models to produce prediction-ready outputs and rich diagnostics.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">JobLib</span>
+              <span class="tech-tag">DEAP</span>
+              <span class="tech-tag">Optuna</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/Building_Heat_Load_Charact_Clustering_Python" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 2: Predictions Changepoint -->
+      <section id="Predictions-Changepoint" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/predictions.jpg" alt="Predictions Changepoint preview">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project2Title">Predictions Changepoint</h2>
+            <p class="project-description" data-translate="project2Description">
+              A production-ready Python system for forecasting building energy loads using a two-stage ML pipeline: it first classifies days into clusters from weather and temporal features, then predicts hourly loads with cluster-specific linear models. It supports batch predictions with scikit-learn .pkl models and CSV parameters, and is grounded in peer‑reviewed changepoint, clustering, and CART research.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/Predictions-Changepoint" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 3: Simpsons DaVinci -->
+      <section id="Simpsons-DaVinci" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/simpsons.jpg" alt="Simpsons DaVinci preview">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project3Title">Simpsons DaVinci</h2>
+            <p class="project-description" data-translate="project3Description">
+              Simpsons-DaVinci is a comprehensive deep learning project that implements and evaluates multiple Generative Adversarial Network (GAN) architectures, including DCGAN, Wasserstein GAN, Autoencoder-GAN, and StyleGAN2, to generate synthetic images in The Simpsons' distinctive cartoon style, providing insights into training stability, image quality, and architectural performance across different generative models.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">GAN</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/Simpsons-DaVinci" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 4: Movie Recommender -->
+      <section id="Movie_Recommender" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/movie_recommender.jpg" alt="Movie Recommender preview">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project4Title">Movie Recommender</h2>
+            <p class="project-description" data-translate="project4Description">
+              A deep learning movie recommender built on MovieLens 100k, comparing NCF, hybrid NeuMF with content features, and an autoencoder across classification and regression tasks.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">NCF</span>
+              <span class="tech-tag">NeuMF</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/Movie_Recommender" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 5: Home Credit Default Risk -->
+      <section id="Home-Credit-Default-Risk" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/Home_Credit.jpg" alt="Home Credit logo preview">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project5Title">Home Credit Default Risk</h2>
+            <p class="project-description" data-translate="project5Description">
+              An end‑to‑end ML pipeline for credit risk: from messy data to explainable, production‑ready models, leveraging ADASYN, Optuna, and ALE to move from baseline guessing to high‑accuracy predictions suitable for responsible lending.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">ADASYN</span>
+              <span class="tech-tag">Optuna</span>
+              <span class="tech-tag">ALE</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/Home-Credit-Default-Risk" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 6: PySpark Demos -->
+      <section id="pyspark-demos" class="project-section">
+        <div class="project-card">
+          <div class="project-image">
+            <img class="project-thumb" src="images/pyspark_demos.jpg" alt="Visualization PySpark Analytical Work">
+          </div>
+          <div class="project-content">
+            <h2 data-translate="project6Title">PySpark Demos</h2>
+            <p class="project-description" data-translate="project6Description">
+              PySpark Big Data Processing Showcase: End-to-end Spark projects featuring recommendation systems (movies), real-time streaming analytics with Kafka, and predictive MLlib models on NYC taxi data, all orchestrated with production-grade Airflow pipelines. Demonstrates scalable distributed computing, rigorous feature engineering and model selection, and reliable workflow automation with clear analytics, visualizations, and reporting.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PySpark</span>
+              <span class="tech-tag">MLlib</span>
+              <span class="tech-tag">Airflow</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/aitorDiezMateo/pyspark-demos" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aitor Díez Mateo | 
+       <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> · 
+       <a href="https://github.com/aitorDiezMateo">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>

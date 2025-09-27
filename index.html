@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" href="images/memoji_AitorDiez.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/language-switcher.js"></script>
+</head>
+<body class="landing-page">
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">
+      <span>Aitor Díez Mateo</span>
+    </div>
+    <div class="nav-right">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <ul class="nav-menu">
+        <li><a href="index.html" data-translate="navHome">Home</a></li>
+        <li><a href="about.html" data-translate="navAbout">About Me</a></li>
+        <li><a href="projects.html" data-translate="navProjects">Projects</a></li>
+        <li class="nav-lang-item">
+          <div class="lang-switcher">
+            <span class="lang-option" data-lang="es">ES</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-option active" data-lang="en">EN</span>
+          </div>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- Main landing section -->
+  <main>
+    <section class="hero-container">
+      <div class="hero-image">
+        <img src="images/memoji_AitorDiez.png" alt="Aitor Diez Memoji">
+      </div>
+      <div class="hero-content">
+        <p class="hero-intro" data-translate="heroIntro">Hello world, my name is</p>
+        <h1 class="hero-title">Aitor</h1>
+        <span class="hero-badge" data-translate="heroBadge">CDIA • Computer Engineering</span>
+        <p class="hero-desc" data-translate="heroDesc">
+          I'm a Computer Science and Data Science student from Spain with a passion for turning complex data into actionable insights.
+          I enjoy exploring machine learning, building innovative projects, and applying technology to solve real-world problems.
+          Currently, I'm focused on developing predictive models and analytical solutions that make an impact in the business and technology space.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="mailto:aitor10mateo@gmail.com" data-translate="btnSendMail">Send a mail</a>
+          <a class="btn btn-outline" href="files/CV_EN_AitorDiez.pdf" target="_blank" rel="noopener noreferrer" data-translate="btnViewResume" data-cv-link="true">View Resume</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/aitordiezmateo" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="images/linkedIn.png" alt="LinkedIn Profile" />
+          </a>
+          <a href="https://github.com/aitorDiezMateo" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="images/GitHub.png" alt="GitHub Profile" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><span data-translate="footerCopyright">© 2025 Aitor Díez Mateo</span> | 
+       <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> · 
+       <a href="https://github.com/aitorDiezMateo">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
