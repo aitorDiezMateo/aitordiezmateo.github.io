@@ -136,7 +136,7 @@ class LanguageSwitcher {
             // Home page
             pageTitle: "Inicio",
             heroIntro: "Hola mundo, mi nombre es",
-            heroBadge: "CDIA • Ingeniería Informática",
+            heroBadge: "Ciencia de Datos & IA • Ingeniería Informática",
             heroDesc: "Soy un estudiante de Ingeniería Informática y Ciencia de Datos al que le encanta transformar datos complicados en ideas útiles. Disfruto explorando el aprendizaje automático, construyendo proyectos innovadores y aplicando tecnología para resolver problemas del mundo real. Actualmente, me enfoco en desarrollar modelos predictivos y soluciones analíticas que generen impacto en el ámbito empresarial y tecnológico.",
             btnSendMail: "Enviar un correo",
             btnViewResume: "Ver Currículum",
