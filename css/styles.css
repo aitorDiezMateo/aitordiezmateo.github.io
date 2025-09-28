@@ -989,9 +989,13 @@ footer a:hover {
 	background: #e25c47;
 	color: #fff;
 	padding: 1rem 0.75rem;
-	text-align: left;
+	text-align: center;
 	font-weight: 600;
 	font-size: 0.9rem;
+}
+
+.skill-table th:first-child {
+	text-align: left;
 }
 
 .skill-table td {
@@ -1317,13 +1321,50 @@ footer a:hover {
 		font-size: 0.85rem;
 		width: 100%;
 		max-width: 100%;
+		border-radius: 8px;
+		overflow: hidden;
+		display: block;
+		white-space: nowrap;
+	}
+	
+	.skill-table thead,
+	.skill-table tbody,
+	.skill-table tr,
+	.skill-table th,
+	.skill-table td {
+		display: block;
+	}
+	
+	.skill-table thead {
+		width: 100%;
+	}
+	
+	.skill-table tbody {
 		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%;
+	}
+	
+	.skill-table tr {
+		display: flex;
+		width: 100%;
+		min-width: 100%;
 	}
 	
 	.skill-table th,
 	.skill-table td {
 		padding: 0.75rem 0.5rem;
 		word-break: break-word;
+		flex: 1;
+		min-width: 0;
+		white-space: normal;
+	}
+	
+	.skill-table th {
+		background: #e25c47 !important;
+		color: #fff;
+		font-weight: 600;
+		text-align: center;
 	}
 }
 	
