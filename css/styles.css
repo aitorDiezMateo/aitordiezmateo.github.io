@@ -338,9 +338,19 @@ footer a:hover {
 		padding: 1rem 1.5rem;
 	}
 	
+	/* Enable vertical scrolling on landing page for tablets */
+	body.landing-page {
+		height: auto;
+		min-height: 100vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
 	.hero-container {
 		gap: 2rem;
 		padding: 1.5rem;
+		height: auto;
+		min-height: calc(100vh - 70px - 50px);
 	}
 	
 	.hero-title {
@@ -350,20 +360,140 @@ footer a:hover {
 	.hero-desc {
 		font-size: 1.1rem;
 	}
-	
-	/* Tablet About Page */
-	.about-sidebar {
-		position: static;
-		width: 100%;
-		height: auto;
-		border-right: none;
-		border-bottom: 1px solid #e0e0e0;
+}
+
+/* Tablet-specific styles (769px to 1024px) - Fix for sidebar hiding */
+@media (min-width: 769px) and (max-width: 1024px) {
+	/* Hide sidebars on tablets */
+	.about-sidebar,
+	.projects-sidebar {
+		display: none !important;
 	}
 	
+	/* Tablet About Page */
 	.about-content {
-		margin-left: 0;
+		margin-left: 0 !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		padding: 2rem !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+	
+	/* Tablet Projects Page */
+	.projects-content {
+		margin-left: 0 !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		padding: 2rem !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+	
+	/* Center content sections on tablets */
+	.about-section {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+	.project-section {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+	/* Ensure cards take full available width */
+	.intro-card,
+	.content-card,
+	.project-card {
+		width: 100%;
 		max-width: 100%;
-		padding: 2rem;
+		margin: 0 auto 2rem auto;
+		box-sizing: border-box;
+	}
+	
+	/* Projects grid adjustment for tablets */
+	.projects-grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+/* Medium Mobile/Small Tablet styles (481px to 768px) - Fix for sidebar hiding */
+@media (min-width: 481px) and (max-width: 768px) {
+	/* Hide sidebars on medium mobile/small tablets */
+	.about-sidebar,
+	.projects-sidebar {
+		display: none !important;
+	}
+	
+	/* Medium Mobile About Page */
+	.about-content {
+		margin-left: 0 !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		padding: 1.5rem !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+	
+	/* Medium Mobile Projects Page */
+	.projects-content {
+		margin-left: 0 !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		padding: 1.5rem !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+	
+	/* Center content sections */
+	.about-section {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	.project-section {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	/* Ensure cards take full available width */
+	.intro-card,
+	.content-card,
+	.project-card {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto 1.5rem auto;
+		padding: 1.5rem;
+		box-sizing: border-box;
+	}
+	
+	/* Projects grid adjustment */
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+	
+	/* Header adjustments */
+	.about-section h1,
+	.projects-header h1 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	
+	.about-section h2 {
+		font-size: 1.75rem;
 	}
 }
 
@@ -1179,24 +1309,23 @@ footer a:hover {
 
 /* Responsive Design for About Page */
 @media (max-width: 1024px) {
-	.about-sidebar {
-		width: 240px;
-	}
-	
-	.about-content {
-		margin-left: 240px;
-		max-width: calc(100% - 240px);
-		padding: 2rem;
-	}
+	/* Tablet responsive adjustments - sidebars already hidden in main media query above */
 	
 	/* Responsive adjustments for images on tablets */
 	.intro-content {
 		gap: 2rem;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	.profile-image img {
 		width: 160px;
 		height: 160px;
+	}
+	
+	.intro-text-content {
+		text-align: center;
+		max-width: 600px;
 	}
 	
 	.image-gallery {
@@ -1506,28 +1635,6 @@ footer a:hover {
 		box-sizing: border-box;
 	}
 
-
-/* Tablet responsive for projects */
-@media (max-width: 1024px) {
-	.projects-sidebar {
-		position: static;
-		width: 100%;
-		height: auto;
-		border-right: none;
-		border-bottom: 1px solid #e0e0e0;
-	}
-	
-	.projects-content {
-		margin-left: 0;
-		max-width: 100%;
-		padding: 2rem;
-	}
-	
-	.projects-grid {
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	}
-}
-
 /* Projects Page Styles */
 .projects-main {
 	display: flex;
@@ -1794,15 +1901,7 @@ footer a:hover {
 
 /* Responsive Design for Projects Page */
 @media (max-width: 1024px) {
-	.projects-sidebar {
-		width: 240px;
-	}
-	
-	.projects-content {
-		margin-left: 240px;
-		max-width: calc(100% - 240px);
-		padding: 2rem;
-	}
+	/* Tablet responsive adjustments - sidebars already hidden in main media query above */
 	
 	.projects-grid {
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
