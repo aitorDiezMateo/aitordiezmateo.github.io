@@ -1226,6 +1226,15 @@ footer a:hover {
 		width: 100%;
 		padding: 1rem;
 		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.about-section {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
 	}
 	
 	.about-section h1 {
@@ -1237,7 +1246,7 @@ footer a:hover {
 		font-size: 1.75rem;
 	}
 	
-	/* Ensure cards don't overflow */
+	/* Ensure cards don't overflow and are properly centered */
 	.intro-card,
 	.content-card {
 		padding: 1.5rem;
@@ -1245,6 +1254,8 @@ footer a:hover {
 		width: 100%;
 		max-width: 100%;
 		box-sizing: border-box;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	/* Mobile responsive adjustments for images */
@@ -1258,8 +1269,8 @@ footer a:hover {
 		width: 140px;
 		height: 140px;
 		border-width: 3px;
-		max-width: 100%;
-		height: auto;
+		object-fit: cover;
+		border-radius: 50%;
 	}
 	
 	.image-gallery {
@@ -1770,6 +1781,17 @@ footer a:hover {
 		margin-left: 0;
 		max-width: 100%;
 		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.projects-header,
+	.project-section {
+		width: 100%;
+		max-width: 100%;
 	}
 	
 	.projects-header h1 {
@@ -1802,10 +1824,27 @@ footer a:hover {
 
 /* Additional mobile fixes to prevent horizontal scroll */
 @media (max-width: 480px) {
+	/* Hide sidebars on very small mobile screens */
+	.about-sidebar,
+	.projects-sidebar {
+		display: none;
+	}
+	
 	/* Ultra-mobile specific fixes */
 	.about-content,
 	.projects-content {
-		padding: 0.75rem;
+		padding: 0.5rem;
+		width: 100%;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.about-section,
+	.project-section {
+		width: 100%;
+		margin: 0 auto;
 	}
 	
 	.intro-card,
@@ -1813,6 +1852,9 @@ footer a:hover {
 	.project-card {
 		padding: 1rem;
 		margin: 0.5rem 0;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.about-section h1,
