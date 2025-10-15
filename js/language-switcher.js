@@ -58,7 +58,9 @@ class LanguageSwitcher {
         document.querySelectorAll('[data-original-text]').forEach(element => {
             const key = element.getAttribute('data-translate');
             // Use innerHTML for elements that had HTML formatting
-            if (key === 'aboutBackgroundText' || key === 'aboutExperienceDescription') {
+            if (key === 'aboutBackgroundText' || 
+                key === 'aboutExperienceDescription' || 
+                key === 'aboutExperienceAchievement4') {
                 element.innerHTML = element.getAttribute('data-original-text');
             } else {
                 element.textContent = element.getAttribute('data-original-text');
@@ -83,15 +85,19 @@ class LanguageSwitcher {
                 // Store original English text if not already stored
                 if (!element.hasAttribute('data-original-text')) {
                     // Only use innerHTML for elements that contain HTML formatting
-                    if (key === 'aboutBackgroundText' || key === 'aboutExperienceDescription') {
+                    if (key === 'aboutBackgroundText' || 
+                        key === 'aboutExperienceDescription' || 
+                        key === 'aboutExperienceAchievement4') {
                         element.setAttribute('data-original-text', element.innerHTML);
                     } else {
                         element.setAttribute('data-original-text', element.textContent);
                     }
                 }
                 
-                // Special handling for elements that need HTML formatting (like line breaks)
-                if (key === 'aboutBackgroundText' || key === 'aboutExperienceDescription') {
+                // Special handling for elements that need HTML formatting (like line breaks or links)
+                if (key === 'aboutBackgroundText' || 
+                    key === 'aboutExperienceDescription' || 
+                    key === 'aboutExperienceAchievement4') {
                     element.innerHTML = translations[key].replace(/\n\n/g, '<br><br>');
                 } else {
                     element.textContent = translations[key];
