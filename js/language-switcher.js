@@ -174,6 +174,10 @@ class LanguageSwitcher {
             aboutExperienceCompany: "DeustoTech, Bilbao, España",
             aboutExperienceDuration: "Febrero 2024 - Presente",
             aboutExperienceDescription: "Beca concedida en el Deusto Sustainable Research Team, enfocándose en el campo de Energía en Edificios bajo la supervisión del <a href=\"https://www.robertogaray.com\">Dr. Roberto Garay Martínez</a>. Desarrollé e implementé modelos predictivos para estimar el consumo energético en edificios basándose en variables exógenas, contribuyendo a la investigación sobre eficiencia energética y optimización de Smart Grid.",
+            aboutExperienceAchievement1: "Especializado en modelos Changepoint y modelos Time-of-the-Week (ToW), analizando patrones y tendencias en el uso de energía para mejorar la precisión de las predicciones",
+            aboutExperienceAchievement2: "Extenso preprocesamiento de datos, ingeniería de características y análisis estadístico para identificar factores clave que afectan el consumo energético de edificios",
+            aboutExperienceAchievement3: "Presenté hallazgos e insights al grupo de investigación, produciendo informes detallados y visualizaciones para comunicar resultados complejos de manera efectiva",
+            aboutExperienceAchievement4: "Obtuve experiencia profesional práctica y participé en proyectos de investigación financiados por la UE, incluyendo <a href=\"https://smartcity-atelier.eu/\">ATELIER</a> y <a href=\"https://stunned-project.eu/\">STUNNED</a>",
             
             // Skills section
             aboutSkillsTitle: "Habilidades Técnicas",
