@@ -3,30 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-translate="aboutPageTitle">About Me</title>
+  <title>About — Aitor Díez Mateo</title>
+  <meta name="description" content="Background, experience, education, and skills of Aitor Díez Mateo.">
   <link rel="icon" href="../images/memoji_AitorDiez.ico">
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/language-switcher.js"></script>
 </head>
 <body>
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
   <!-- Navbar -->
   <nav>
     <div class="nav-left">
-      <span>Aitor Díez Mateo</span>
+      <a href="/" class="brand">Aitor Díez Mateo</a>
     </div>
     <div class="nav-right">
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <ul class="nav-menu">
-        <li><a href="/" data-translate="navHome">Home</a></li>
-        <li><a href="/about/" data-translate="navAbout">About Me</a></li>
-        <li><a href="/projects/" data-translate="navProjects">Projects</a></li>
-        <li class="nav-lang-item">
-          <div class="lang-switcher">
-            <span class="lang-option" data-lang="es">ES</span>
-            <span class="lang-divider">|</span>
-            <span class="lang-option active" data-lang="en">EN</span>
-          </div>
-        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/" class="active">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="mailto:aitor10mateo@gmail.com" class="nav-contact">Contact</a></li>
       </ul>
       <label for="nav-toggle" class="hamburger">
         <span class="bar"></span>
@@ -41,16 +36,15 @@
     <!-- Fixed Sidebar -->
     <aside class="about-sidebar">
       <div class="sidebar-content">
-        <h3 data-translate="aboutNavigation">Navigation</h3>
+        <h3>On this page</h3>
         <ul class="sidebar-nav">
-          <li><a href="#introduction" data-translate="aboutNavIntro">Introduction</a></li>
-          <li><a href="#background" data-translate="aboutNavBackground">Background</a></li>
-          <li><a href="#education" data-translate="aboutNavEducation">Education</a></li>
-          <li><a href="#experience" data-translate="aboutNavExperience">Experience</a></li>
-          <li><a href="#skills" data-translate="aboutNavSkills">Technical Skills</a></li>
-          <li><a href="#certifications" data-translate="aboutNavCertifications">Certifications</a></li>
-          <li><a href="#gallery" data-translate="aboutNavGallery">Personal Gallery</a></li>
-          <li><a href="#interests" data-translate="aboutNavInterests">Interests</a></li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Publications &amp; Achievements</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
     </aside>
@@ -58,396 +52,322 @@
     <!-- Main Content Area -->
     <div class="about-content">
       <section id="introduction" class="about-section">
-        <h1 data-translate="aboutTitle">About Me</h1>
+        <p class="section-eyebrow">About</p>
+        <h1>Hi, I'm Aitor</h1>
         <div class="intro-card">
           <div class="intro-content">
             <div class="profile-image">
               <img src="../images/personal_image_01.jpg" alt="Aitor Díez Mateo - Personal Photo" />
             </div>
             <div class="intro-text-content">
-              <p class="intro-text" data-translate="aboutIntroText">
-                Hello! I'm Aitor Díez Mateo, a passionate Computer Science and Data Science student 
-                from Spain with a deep fascination for turning complex data into actionable insights. 
-                I believe in the power of technology to solve real-world problems and create meaningful impact.
+              <p class="intro-text">
+                I'm a final-year Computer Engineering and Data Science &amp; AI student at the University
+                of Deusto, applying machine learning to energy systems, optimization, and quantitative
+                problems. My work spans academic research at DeustoTech — three co-authored papers on
+                building energy forecasting and demand-side management — and an applied GenAI internship
+                at McKinsey QuantumBlack.
+              </p>
+              <p class="intro-text">
+                Outside of research and coursework, I care about ideas that hold up outside the notebook:
+                interpretable models, honest evaluation, and results that still make sense on real data.
+                I'm social by nature, competitive in sports, and enjoy building things end to end.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-    <section id="background" class="about-section">
-      <h2 data-translate="aboutBackgroundTitle">Background</h2>
-      <div class="content-card">
-        <p class="description" data-translate="aboutBackgroundText">
-          Ever since I was a kid, I’ve been fascinated by how the world works. I remember spending hours exploring ideas, asking questions, and enjoying the thrill of solving problems, whether it was a tricky math question or figuring out how things fit together. That constant curiosity has always been my driving force. I love learning, discovering new perspectives, and finding beauty in the process of understanding.
-          <br><br>
-          In school, my love for math naturally grew into a passion for bigger challenges, where patience and creativity go hand in hand. At the same time, technology started to catch my interest, not just as a tool, but as something that constantly reshapes how we live, connect, and understand the world. All of this naturally led me to the world of data. Analyzing information, understanding problems, and coming up with solutions that genuinely help people is something that really motivates me.
-          <br><br>
-          Beyond the analytical side, I’ve always loved connecting with people. I’m very social and really enjoy spending time with friends and family, making plans, and creating memories together. Working in a team is something I’m passionate about. I believe the best solutions come from combining different ideas and perspectives to reach a common goal.
-          <br><br>
-          And I can’t forget sports, which play a big part in my life. They help me stay active, release energy, and learn the importance of discipline and consistency, values I try to bring into everything I do.
-          <br><br>
-          All in all, I’d describe myself as curious, passionate, and social, always looking to learn, grow, and enjoy the journey, both personally and professionally.
-        </p>
-      </div>
-    </section>
+      <section id="experience" class="about-section reveal">
+        <p class="section-eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
 
-
-      <section id="education" class="about-section">
-        <h2 data-translate="aboutEducationTitle">Education</h2>
-        <div class="content-card">
-          <div class="education-item">
-            <h3 data-translate="aboutEducationDegree">Double Degree in Computer Engineering & Data Science and AI</h3>
-            <p class="institution" data-translate="aboutEducationInstitution">University of Deusto, Spain</p>
-            <p class="duration" data-translate="aboutEducationDuration">Sept. 2022 - June 2027</p>
-            <p class="description" data-translate="aboutEducationDescription">
-              Currently pursuing a comprehensive program that combines traditional computer science 
-              with cutting-edge data science and artificial intelligence. The curriculum covers everything 
-              from software engineering principles to advanced machine learning algorithms, statistical 
-              analysis, and big data processing.
-            </p>
-            <div class="academic-info">
-              <div class="grades">
-                <p><strong data-translate="aboutEducationGPA">GPA:</strong> 3.68/4.0</p>
-                <p><strong data-translate="aboutEducationAverage">Average Grade:</strong> 9.19/10</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Scientist Intern</h3>
+                <p class="company">McKinsey &amp; Company — QuantumBlack <span class="location">· Madrid, Spain</span></p>
               </div>
+              <p class="duration">June 2026 – July 2026</p>
             </div>
-            <div class="coursework">
-              <h4 data-translate="aboutEducationCoursework">Key Coursework:</h4>
-              <ul>
-                <li data-translate="aboutEducationCourse1">Advanced Algorithms & Data Structures</li>
-                <li data-translate="aboutEducationCourse2">Machine Learning & Deep Learning</li>
-                <li data-translate="aboutEducationCourse3">Statistical Analysis & Data Mining</li>
-                <li data-translate="aboutEducationCourse4">Software Engineering & System Design</li>
-                <li data-translate="aboutEducationCourse5">Database Systems & Big Data Technologies</li>
-                <li data-translate="aboutEducationCourse6">Computer Vision & Natural Language Processing</li>
-              </ul>
-            </div>
-            <div class="honors">
-              <h4 data-translate="aboutEducationHonors">Honor Distinctions:</h4>
-              <ul>
-                <li data-translate="aboutHonor1">Calculus</li>
-                <li data-translate="aboutHonor2">Computer Structure</li>
-                <li data-translate="aboutHonor3">Databases (SQL)</li>
-                <li data-translate="aboutHonor4">Application Programming (Java)</li>
-                <li data-translate="aboutHonor5">Programming Methodology and Languages</li>
-                <li data-translate="aboutHonor6">Data Science (R)</li>
-                <li data-translate="aboutHonor7">Advanced Statistics</li>
-                <li data-translate="aboutHonor8">Low-Level Programming (C/C++)</li>
-                <li data-translate="aboutHonor9">Information Advanced Modelling</li>
-                <li data-translate="aboutHonor10">Big Data Processing (PySpark)</li>
-                <li data-translate="aboutHonor11">Deep Learning (PyTorch)</li>
-              </ul>
+            <ul class="key-achievements">
+              <li>Built an end-to-end GenAI pipeline that automatically extracts customer intents and interaction patterns from call-center transcriptions, powering data-driven analytics for agent training and coaching programs at scale.</li>
+            </ul>
+            <div class="technologies">
+              <span class="tech-tag">GenAI</span>
+              <span class="tech-tag">LLMs</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section id="experience" class="about-section">
-        <h2 data-translate="aboutExperienceTitle">Experience</h2>
-        <div class="content-card">
-          <div class="experience-item">
-            <h3 data-translate="aboutExperienceJobTitle">Machine Learning Research Intern</h3>
-            <p class="company" data-translate="aboutExperienceCompany">DeustoTech, Bilbao, Spain</p>
-            <p class="duration" data-translate="aboutExperienceDuration">February 2024 - Present</p>
-            <p class="description" data-translate="aboutExperienceDescription">
-              Granted internship in the Deusto Sustainable Research Group, focusing on Energy in Buildings 
-              field under the supervision of <a href="https://www.robertogaray.com">PhD Roberto Garay Martínez</a>. Developed and implemented 
-              predictive models to estimate electricity consumption in buildings based on exogenous variables, 
-              contributing to research on energy efficiency and Smart Grid optimization.
-            </p>
-            <div class="key-achievements">
-              <ul>
-                <li data-translate="aboutExperienceAchievement1">Specialized in Changepoint models and Time-of-the-Week (ToW) models, analyzing patterns and trends in energy usage to improve forecast accuracy</li>
-                <li data-translate="aboutExperienceAchievement2">Conducted extensive data preprocessing, feature engineering, and statistical analysis to identify key factors affecting building energy consumption</li>
-                <li data-translate="aboutExperienceAchievement3">Presented findings and insights to the research group, producing detailed reports and visualizations to communicate complex results effectively</li>
-                <li data-translate="aboutExperienceAchievement4">Gained hands-on professional experience and participated in EU-funded research projects, including <a href="https://smartcity-atelier.eu/">ATELIER</a> and <a href="https://stunned-project.eu/">STUNNED</a></li>
-              </ul>
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Machine Learning Research Intern</h3>
+                <p class="company">DeustoTech — Deusto Sustainable Research Group <span class="location">· Bilbao, Spain</span></p>
+              </div>
+              <p class="duration">Feb 2025 – June 2026</p>
             </div>
+            <p class="description">
+              Researched data-driven methods for building energy systems under the supervision of
+              <a href="https://www.robertogaray.com" target="_blank" rel="noopener noreferrer">Dr. Roberto Garay-Martinez</a>,
+              co-authoring three peer-reviewed papers (see <a href="#achievements">Publications</a>).
+            </p>
+            <ul class="key-achievements">
+              <li>Built a hybrid short-term load forecasting framework (K-Means clustering, SVM classification, regression) that decouples daily load shape from peak magnitude, reaching R² = 0.83 and a 26% improvement in explained variance over the strongest baseline.</li>
+              <li>Designed a rule-based method (ATBD) to identify residential EV charging events from aggregate household consumption, without sub-metering or private user data.</li>
+              <li>Developed a heat-pump demand-side management algorithm driven by wholesale electricity prices, cutting daily peak loads by up to 60% and annual energy costs by 2.5% on a real multi-rise building dataset.</li>
+            </ul>
             <div class="technologies">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">Machine Learning</span>
-              <span class="tech-tag">Statistical Analysis</span>
-              <span class="tech-tag">Data Preprocessing</span>
-              <span class="tech-tag">Energy Modeling</span>
-              <span class="tech-tag">Research</span>
+              <span class="tech-tag">Time Series</span>
+              <span class="tech-tag">Clustering</span>
+              <span class="tech-tag">Forecasting</span>
+              <span class="tech-tag">Energy Systems</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="about-section">
-        <h2 data-translate="aboutSkillsTitle">Technical Skills</h2>
+      <section id="education" class="about-section reveal">
+        <p class="section-eyebrow">Education</p>
+        <h2>Academic background</h2>
+        <div class="content-card">
+          <div class="education-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Dual B.Sc. in Computer Engineering and Data Science &amp; AI</h3>
+                <p class="institution">University of Deusto, Bilbao, Spain</p>
+              </div>
+              <p class="duration">Sept 2022 – June 2027</p>
+            </div>
+            <p class="academic-stat">Average grade: <strong>9.30 / 10</strong></p>
+
+            <div class="honors">
+              <h4>Highest honors in ~40% of courses</h4>
+              <div class="honors-groups">
+                <div class="honors-group">
+                  <span class="honors-year">2026</span>
+                  <div class="tag-cloud">
+                    <span class="skill-item">NLP</span>
+                    <span class="skill-item">Reinforcement Learning</span>
+                    <span class="skill-item">Web Engineering</span>
+                    <span class="skill-item">Operating Systems</span>
+                    <span class="skill-item">Advanced Machine Learning</span>
+                    <span class="skill-item">Knowledge Management</span>
+                    <span class="skill-item">Software Design</span>
+                  </div>
+                </div>
+                <div class="honors-group">
+                  <span class="honors-year">2025</span>
+                  <div class="tag-cloud">
+                    <span class="skill-item">Information Advanced Modelling</span>
+                    <span class="skill-item">Big Data Processing (PySpark)</span>
+                    <span class="skill-item">Deep Learning (PyTorch)</span>
+                  </div>
+                </div>
+                <div class="honors-group">
+                  <span class="honors-year">2024</span>
+                  <div class="tag-cloud">
+                    <span class="skill-item">Databases (SQL)</span>
+                    <span class="skill-item">Application Programming (Java)</span>
+                    <span class="skill-item">Programming Methodology &amp; Languages</span>
+                    <span class="skill-item">Data Science (R)</span>
+                    <span class="skill-item">Advanced Statistics</span>
+                    <span class="skill-item">Low-Level Programming (C/C++)</span>
+                  </div>
+                </div>
+                <div class="honors-group">
+                  <span class="honors-year">2023</span>
+                  <div class="tag-cloud">
+                    <span class="skill-item">Calculus</span>
+                    <span class="skill-item">Computer Structure</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-item education-item-secondary">
+            <div class="timeline-header">
+              <div>
+                <h3>Academic Exchange Program</h3>
+                <p class="institution">Wilfrid Laurier University, Waterloo, ON, Canada</p>
+              </div>
+              <p class="duration">Sept 2026 – Dec 2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="about-section reveal">
+        <p class="section-eyebrow">Recognition</p>
+        <h2>Publications &amp; Achievements</h2>
+
+        <div class="content-card">
+          <h4 class="subsection-title">Publications</h4>
+          <ul class="publications-list">
+            <li>
+              <span class="pub-title">Hybrid Machine Learning Approach for Short-Term Load Forecasting in Small Commercial Buildings</span>
+              <span class="pub-venue">ITISE 2026 (Engineering Proceedings, MDPI)</span>
+            </li>
+            <li>
+              <span class="pub-title">Algorithmic Thresholding and Baseline Detection for Residential EV Charging Event Identification</span>
+              <span class="pub-venue">Splitech 2026</span>
+            </li>
+            <li>
+              <span class="pub-title">Structured Analysis of Heat Pump Usage in Buildings and Load Optimization for Optimal Management of Loads</span>
+              <span class="pub-venue">Splitech 2026</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-item">
+            <p class="achievement-date">June 2026</p>
+            <h3>IBM OA6 University Challenge</h3>
+            <p>
+              National Finalist in IBM's Entrepreneurship, Innovation, and Consulting challenge — advanced from
+              the University of Deusto stage to architect <em>Repsol Apex</em>, an agentic AI solution, under
+              months-long mentorship from IBM Consulting and Repsol's Head of Data &amp; AI.
+            </p>
+          </div>
+          <div class="achievement-item">
+            <p class="achievement-date">Jan 2026 – June 2026</p>
+            <h3>Ikasiker Research Fellowship</h3>
+            <p>
+              Competitive research grant from the Basque Government's Department of Education, awarded for
+              academic excellence — ranked 1st in the Faculty of Engineering and 2nd university-wide.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="about-section reveal">
+        <p class="section-eyebrow">Toolbox</p>
+        <h2>Skills &amp; Technologies</h2>
         <div class="content-card">
           <div class="skills-grid">
             <div class="skill-category">
-              <h3 data-translate="aboutSkillsProgramming">Programming Languages</h3>
+              <h3>Languages</h3>
               <div class="skills-list">
                 <span class="skill-item">Python</span>
-                <span class="skill-item">Java</span>
                 <span class="skill-item">R</span>
+                <span class="skill-item">Java</span>
                 <span class="skill-item">C/C++</span>
                 <span class="skill-item">SQL</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3 data-translate="aboutSkillsML">Machine Learning & AI</h3>
+              <h3>Machine Learning &amp; AI</h3>
               <div class="skills-list">
-                <span class="skill-item">Scikit-learn</span>
                 <span class="skill-item">PyTorch</span>
-                <span class="skill-item">DEAP</span>
-                <span class="skill-item">OpenCV</span>
-                <span class="skill-item">PySpark</span>
+                <span class="skill-item">Scikit-learn</span>
+                <span class="skill-item">XGBoost</span>
                 <span class="skill-item">Optuna</span>
+                <span class="skill-item">OpenCV</span>
+                <span class="skill-item">LangChain</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3 data-translate="aboutSkillsData">Data Analysis & Visualization</h3>
+              <h3>Data &amp; Visualization</h3>
               <div class="skills-list">
                 <span class="skill-item">Pandas</span>
                 <span class="skill-item">NumPy</span>
-                <span class="skill-item">SciPy</span>
+                <span class="skill-item">PySpark</span>
                 <span class="skill-item">Matplotlib</span>
-                <span class="skill-item">Seaborn</span>
                 <span class="skill-item">Grafana</span>
-                <span class="skill-item">Looker Studio</span>
               </div>
             </div>
 
             <div class="skill-category">
-              <h3 data-translate="aboutSkillsWeb">Web Development</h3>
+              <h3>Tools &amp; Platforms</h3>
               <div class="skills-list">
-                <span class="skill-item">HTML/CSS</span>
-                <span class="skill-item">MongoDB</span>
                 <span class="skill-item">Git</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3 data-translate="aboutSkillsTools">Tools & Platforms</h3>
-              <div class="skills-list">
-                <span class="skill-item">Jupyter</span>
                 <span class="skill-item">Docker</span>
                 <span class="skill-item">AWS</span>
                 <span class="skill-item">Linux</span>
-                <span class="skill-item">VS Code</span>
-                <span class="skill-item">Excel</span>
+                <span class="skill-item">Jupyter</span>
               </div>
             </div>
           </div>
 
-          <!-- Skill Level Tables -->
-          <div class="skill-tables">
-            <div class="skill-table-container">
-              <h3 data-translate="aboutSkillsProgrammingTable">Programming Languages Proficiency</h3>
-              <table class="skill-table">
-                <thead>
-                  <tr>
-                    <th data-translate="aboutSkillsTableTechnology">Technology</th>
-                    <th data-translate="aboutSkillsTableSkillBar">Skill Level</th>
-                    <th data-translate="aboutSkillsTablePercentage">%</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Python</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="90"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">90%</td>
-                  </tr>
-                  <tr>
-                    <td>R</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="70"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">70%</td>
-                  </tr>
-                  <tr>
-                    <td>Java</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="65"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">65%</td>
-                  </tr>
-                  <tr>
-                    <td>C/C++</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="50"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">50%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="skill-table-container">
-              <h3 data-translate="aboutSkillsLanguageTable">Language Proficiency</h3>
-              <table class="skill-table">
-                <thead>
-                  <tr>
-                    <th data-translate="aboutSkillsTableLanguageName">Language</th>
-                    <th data-translate="aboutSkillsTableFluency">Fluency</th>
-                    <th data-translate="aboutSkillsTableCEFR">CEFR</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-translate="aboutSkillsSpanish">Spanish</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="100"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage" data-translate="aboutSkillsNative">Native</td>
-                  </tr>
-                  <tr>
-                    <td data-translate="aboutSkillsEnglish">English</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="90"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">C1</td>
-                  </tr>
-                  <tr>
-                    <td data-translate="aboutSkillsBasque">Basque</td>
-                    <td>
-                      <div class="skill-bar">
-                        <div class="skill-progress" data-level="80"></div>
-                      </div>
-                    </td>
-                    <td class="skill-percentage">B2</td>
-                  </tr>
-
-                </tbody>
-              </table>
+          <div class="languages-row">
+            <h3>Languages spoken</h3>
+            <div class="skills-list">
+              <span class="skill-item">Spanish — Native</span>
+              <span class="skill-item">English — C1</span>
+              <span class="skill-item">Basque — B2</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="certifications" class="about-section">
-        <h2 data-translate="aboutCertificationsTitle">Certifications</h2>
+      <section id="certifications" class="about-section reveal">
+        <p class="section-eyebrow">Credentials</p>
+        <h2>Certifications</h2>
         <div class="content-card">
           <div class="certifications-list">
             <div class="certification-item">
-              <h3 data-translate="aboutCert1Title">Applied Data Science with Python</h3>
-              <p class="issuer" data-translate="aboutCert1Issuer">Issued by IBM</p>
-              <p class="date" data-translate="aboutCert1Date">July 2024</p>
-              <p class="description" data-translate="aboutCert1Description">
-                Comprehensive specialization covering the full data science pipeline using Python, 
-                including data analysis, visualization, and machine learning techniques.
-              </p>
-              <a href="https://www.credly.com/badges/0ee5ddd1-720f-49b5-bfc7-a875408defda/linked_in_profile" class="verification-link" target="_blank" rel="noopener noreferrer" data-translate="aboutCertViewCredential">View Credential</a>
-            </div>
-            
-            <div class="certification-item">
-              <h3 data-translate="aboutCert2Title">Data Analysis with Python</h3>
-              <p class="issuer" data-translate="aboutCert2Issuer">Issued by IBM</p>
-              <p class="date" data-translate="aboutCert2Date">July 2024</p>
-              <p class="description" data-translate="aboutCert2Description">
-                Advanced data analysis techniques using Python libraries including Pandas, NumPy, 
-                and statistical methods for extracting insights from complex datasets.
-              </p>
-              <a href="https://courses.cognitiveclass.ai/certificates/33f4c48a45db4babb07e57ef11466d82" class="verification-link" target="_blank" rel="noopener noreferrer" data-translate="aboutCertViewCredential">View Credential</a>
-            </div>
-            
-            <div class="certification-item">
-              <h3 data-translate="aboutCert3Title">Data Visualization with Python</h3>
-              <p class="issuer" data-translate="aboutCert3Issuer">Issued by IBM</p>
-              <p class="date" data-translate="aboutCert3Date">July 2024</p>
-              <p class="description" data-translate="aboutCert3Description">
-                Creating compelling data visualizations and dashboards using Python libraries 
-                such as Matplotlib, Seaborn, and Plotly for effective data storytelling.
-              </p>
-              <a href="https://courses.cognitiveclass.ai/certificates/5682766b2a1f4cb58f9acf8cb524a215" class="verification-link" target="_blank" rel="noopener noreferrer" data-translate="aboutCertViewCredential">View Credential</a>
-            </div>
-            
-            <div class="certification-item">
-              <h3 data-translate="aboutCert4Title">Python for Data Science</h3>
-              <p class="issuer" data-translate="aboutCert4Issuer">Issued by IBM</p>
-              <p class="date" data-translate="aboutCert4Date">July 2024</p>
-              <p class="description" data-translate="aboutCert4Description">
-                Foundation course covering Python programming fundamentals specifically tailored 
-                for data science applications, including data structures and algorithms.
-              </p>
-              <a href="https://courses.cognitiveclass.ai/certificates/9c72fe6a45ba47abaf7e7c2386e44f74" class="verification-link" target="_blank" rel="noopener noreferrer" data-translate="aboutCertViewCredential">View Credential</a>
+              <h3>Applied Data Science with Python</h3>
+              <p class="issuer">IBM · July 2024</p>
+              <a href="https://www.credly.com/badges/0ee5ddd1-720f-49b5-bfc7-a875408defda/linked_in_profile" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
             </div>
 
             <div class="certification-item">
-              <h3 data-translate="aboutCert5Title">Introduction to Quantum Machine Learning and Quantum Optimization</h3>
-              <p class="issuer" data-translate="aboutCert5Issuer">Issued by University of Deusto</p>
-              <p class="date" data-translate="aboutCert5Date">September 2025 - November 2025</p>
-              <p class="description" data-translate="aboutCert5Description">
-                Foundation course covering the principles of quantum computing and and an introduction to quantum machine learning algorithms and quantum optimization techniques.
-              </p>
-              <a class="verification-link" data-translate="aboutCert5Credential">Credential not available until completion</a>
+              <h3>Data Analysis with Python</h3>
+              <p class="issuer">IBM · July 2024</p>
+              <a href="https://courses.cognitiveclass.ai/certificates/33f4c48a45db4babb07e57ef11466d82" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+            </div>
+
+            <div class="certification-item">
+              <h3>Data Visualization with Python</h3>
+              <p class="issuer">IBM · July 2024</p>
+              <a href="https://courses.cognitiveclass.ai/certificates/5682766b2a1f4cb58f9acf8cb524a215" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+            </div>
+
+            <div class="certification-item">
+              <h3>Python for Data Science</h3>
+              <p class="issuer">IBM · July 2024</p>
+              <a href="https://courses.cognitiveclass.ai/certificates/9c72fe6a45ba47abaf7e7c2386e44f74" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
+            </div>
+
+            <div class="certification-item">
+              <h3>Academy Accreditation: Generative AI Fundamentals</h3>
+              <p class="issuer">Databricks</p>
+            </div>
+
+            <div class="certification-item">
+              <h3>Academy Accreditation: AI Agent Fundamentals</h3>
+              <p class="issuer">Databricks</p>
+            </div>
+
+            <div class="certification-item">
+              <h3>Introduction to LangChain</h3>
+              <p class="issuer">LangChain</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="gallery" class="about-section">
-        <h2 data-translate="aboutGalleryTitle">Personal Gallery</h2>
-        <div class="content-card">
-          <p class="gallery-intro" data-translate="aboutGalleryIntro">
-            A glimpse into my personal side through some moments that define who I am beyond academics and technology.
-          </p>
-          <div class="image-gallery">
-            <div class="gallery-item">
-              <img src="../images/personal_image_00.jpg" alt="Personal moment - Aitor Díez Mateo" />
-            </div>
-            <div class="gallery-item">
-              <img src="../images/personal_image_02.jpg" alt="Personal moment - Aitor Díez Mateo" />
-            </div>
-            <div class="gallery-item">
-              <img src="../images/personal_image_03.jpg" alt="Personal moment - Aitor Díez Mateo" />
-            </div>
-            <div class="gallery-item">
-              <img src="../images/personal_image_04.jpg" alt="Personal moment - Aitor Díez Mateo" />
-            </div>
+      <section id="gallery" class="about-section reveal">
+        <p class="section-eyebrow">Beyond work</p>
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img src="../images/personal_image_00.jpg" alt="Personal moment - Aitor Díez Mateo" />
           </div>
-        </div>
-      </section>
-
-      <section id="interests" class="about-section">
-        <h2 data-translate="aboutInterestsTitle">Interests & Passions</h2>
-        <div class="content-card">
-          <div class="interests-grid">
-            <div class="interest-item">
-              <h3 data-translate="aboutInterestsTech">💻 Technology</h3>
-              <p data-translate="aboutInterestsTechDesc">
-                Passionate about the evolution of technology and its impact on society. I love exploring how innovation shapes our world. I particularly enjoy working with Artificial Intelligence and discovering new ways to leverage its potential for solving real-world challenges.
-              </p>
-            </div>
-
-            <div class="interest-item">
-              <h3 data-translate="aboutInterestsSports">🏃‍♂️ Sports & Wellness</h3>
-              <p data-translate="aboutInterestsSportsDesc">
-                Regular runner and fitness enthusiast. I find that physical activity helps me stay 
-                focused and creative in my technical work.
-              </p>
-            </div>
-
-            <div class="interest-item">
-              <h3 data-translate="aboutInterestsFamily">👨‍👩‍👧‍👦 Family & Friends</h3>
-              <p data-translate="aboutInterestsFamilyDesc">
-                Deeply value the time spent with family and close friends. Believe that strong personal 
-                relationships provide the foundation for personal growth and success. 
-                Enjoy sharing experiences, learning from others, and creating lasting memories together.
-              </p>
-            </div>
+          <div class="gallery-item">
+            <img src="../images/personal_image_02.jpg" alt="Personal moment - Aitor Díez Mateo" />
+          </div>
+          <div class="gallery-item">
+            <img src="../images/personal_image_03.jpg" alt="Personal moment - Aitor Díez Mateo" />
+          </div>
+          <div class="gallery-item">
+            <img src="../images/personal_image_04.jpg" alt="Personal moment - Aitor Díez Mateo" />
           </div>
         </div>
       </section>
@@ -456,10 +376,12 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Aitor Díez Mateo | 
-       <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> · 
+    <p>© 2026 Aitor Díez Mateo |
+       <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> ·
        <a href="https://github.com/aitorDiezMateo">GitHub</a>
     </p>
   </footer>
+
+  <script src="../js/reveal.js"></script>
 </body>
 </html>
