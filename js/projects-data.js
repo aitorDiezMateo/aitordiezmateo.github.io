@@ -14,7 +14,7 @@ window.PROJECTS = [
     name: "Algorithmic Thresholding and Baseline Detection for EV Charging Detection",
     description: "A rule-based algorithm (ATBD) that detects electric vehicle charging sessions directly from aggregate household power consumption, with no sub-metering or labeled data required. Builds an adaptive consumption baseline and derives a dynamic threshold to isolate sustained charging-like load, validated on real residential data and published at Splitech 2026.",
     tags: ["Python", "Pandas", "Time Series", "Energy Systems"],
-    image: "../images/ev_charging_baseline_threshold.svg",
+    image: "../images/ev_charging_baseline_threshold.png",
     imageAlt: "Household power consumption with adaptive baseline and dynamic charging threshold overlaid",
     imagePosition: "left center",
     link: "https://github.com/aitorDiezMateo/algorithmic-thresholding-and-baseline-detection-for-ev-charging-detection"
