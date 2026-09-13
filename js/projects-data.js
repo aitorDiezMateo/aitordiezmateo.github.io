@@ -24,9 +24,8 @@ window.PROJECTS = [
     name: "Hybrid Classification-Regression Methodology for Energy Load Forecasting",
     description: "A two-stage forecasting pipeline for short-term building energy loads that decouples daily load shape from peak magnitude: K-Means clustering and classification predict the day's load pattern, while regression estimates its peak magnitude. Benchmarked against ARIMAX, Prophet, and zero-shot foundation models (TimesFM, Chronos), reaching R² = 0.83 and a 26% improvement in explained variance over the strongest baseline.",
     tags: ["Python", "Scikit-learn", "K-Means", "Forecasting"],
-    image: "../images/load_forecasting_model_comparison.png",
-    imageAlt: "Predicted vs actual energy consumption for the hybrid model against ARIMAX, Prophet, and Chronos baselines",
-    imagePosition: "left center",
+    image: "../images/energy-grid-sunset.jpg",
+    imageAlt: "High-voltage transmission towers silhouetted against a sunset",
     link: "https://github.com/aitorDiezMateo/clustering-hybrid-load-forecasting"
   },
   {
@@ -34,8 +33,8 @@ window.PROJECTS = [
     name: "Heat Pump Analysis and Load Optimization",
     description: "An analysis of a real ground-source heat pump plant that models its efficiency (COP) from operational data and runs a price-aware load-shifting algorithm to shift thermal demand toward cheaper electricity windows. Applied to a full year of building data, the approach cut daily peak loads by up to 60% and annual energy costs by 2.5% without degrading system efficiency.",
     tags: ["Python", "Optimization", "Energy Systems"],
-    image: "../images/heat_pump_load_shifting.svg",
-    imageAlt: "Original vs price-shifted heat pump load profile against the electricity price curve for a single day",
+    image: "../images/heat-pump-unit.jpg",
+    imageAlt: "Outdoor ground-source heat pump unit installed beside a house",
     link: "https://github.com/aitorDiezMateo/heat-pump-analysis-and-load-optimization"
   },
   {
@@ -43,8 +42,8 @@ window.PROJECTS = [
     name: "Deep Reinforcement Learning for Option Hedging",
     description: "Trains SAC and TD3 reinforcement learning agents to hedge S&P 500 options inside a custom trading environment with realistic transaction costs, learning entirely from simulated price paths. Evaluated out-of-sample on real market data from 2004–2025 against a Black-Scholes delta-hedging benchmark, the agents post higher P&L and Sharpe ratio at the cost of higher transaction costs and drawdown — a trade-off analyzed in depth rather than oversold as a clean win.",
     tags: ["Python", "PyTorch", "Reinforcement Learning", "Optuna"],
-    image: "../images/hedging_cumulative_pnl.png",
-    imageAlt: "Cumulative P&L of the RL hedging agent versus a Black-Scholes delta-hedging benchmark over 2012",
+    image: "../images/trading-candlestick-screen.jpg",
+    imageAlt: "Candlestick trading chart glowing on a dark screen",
     link: "https://github.com/aitorDiezMateo/DeepHedging"
   },
   {
@@ -52,8 +51,8 @@ window.PROJECTS = [
     name: "News Analysis to Stock Prediction",
     description: "Tests whether financial news adds predictive signal to next-day stock direction forecasts by fusing FinBERT news embeddings with price-series encoders (LSTM, PatchTST, Chronos) across seven large-cap tech stocks. Across a controlled architecture/embedding/window grid, adding news consistently improves F1-macro over price-only baselines, with an attention-based fusion model extracting the most value from it.",
     tags: ["Python", "PyTorch", "NLP", "FinBERT"],
-    image: "../images/news2stock_confusion_matrix.png",
-    imageAlt: "Confusion matrix of the attention-based fusion model predicting next-day stock direction",
+    image: "../images/financial-newspaper-stock-chart.jpg",
+    imageAlt: "Financial newspaper page showing a stock price chart",
     link: "https://github.com/aitorDiezMateo/News2StockPredictor"
   },
   {
@@ -61,8 +60,8 @@ window.PROJECTS = [
     name: "Delivery Status Prediction",
     description: "Predicts e-commerce delivery outcomes (late, early, on-time, canceled) on a 180K-order, severely imbalanced supply-chain dataset, using a leakage-safe feature pipeline and a chronological train/test split. Tunes imbalance-mitigation strategy jointly with model hyperparameters via Optuna across XGBoost, CatBoost, and ensemble models, improving macro-F1 by 130% over a dummy baseline.",
     tags: ["Python", "XGBoost", "CatBoost", "Optuna"],
-    image: "../images/delivery_status_mitigation_heatmap.png",
-    imageAlt: "Heatmap of mean cross-validated macro-F1 by model type and imbalance-mitigation strategy",
+    image: "../images/shipping-port-sunset.jpg",
+    imageAlt: "Shipping containers and cranes at a busy port at sunset",
     link: "https://github.com/aitorDiezMateo/delivery-status-prediction"
   }
 ];
