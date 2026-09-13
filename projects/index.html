@@ -6,11 +6,15 @@
   <title>Projects — Aitor Díez Mateo</title>
   <meta name="description" content="A selection of machine learning, energy systems, and quantitative projects by Aitor Díez Mateo.">
   <link rel="icon" href="../images/memoji_AitorDiez.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
   <!-- Navbar -->
-  <nav>
+  <nav class="nav-solid">
     <div class="nav-left">
       <a href="/" class="brand">Aitor Díez Mateo</a>
     </div>
@@ -42,15 +46,29 @@
         </p>
       </section>
 
-      <section class="projects-grid" id="projects-grid" aria-label="Project list">
-        <!-- Cards are rendered from js/projects-data.js -->
+      <section class="projects-layout">
+        <div class="projects-list" id="projects-list" aria-label="Project list"></div>
+
+        <aside class="projects-preview" id="projects-preview" aria-hidden="true">
+          <div class="preview-visual" id="preview-visual">
+            <canvas class="preview-canvas" id="preview-canvas"></canvas>
+            <img class="preview-image" id="preview-image" alt="" />
+          </div>
+          <div class="preview-meta">
+            <p class="preview-index" id="preview-index">01 / 07</p>
+            <h3 class="preview-name" id="preview-name"></h3>
+            <p class="preview-desc" id="preview-desc"></p>
+            <div class="preview-tags" id="preview-tags"></div>
+            <a class="preview-link" id="preview-link" href="#" target="_blank" rel="noopener noreferrer">View code →</a>
+          </div>
+        </aside>
       </section>
     </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Aitor Díez Mateo |
+    <p>© 2026 Aitor Díez Mateo ·
        <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> ·
        <a href="https://github.com/aitorDiezMateo">GitHub</a>
     </p>
@@ -58,5 +76,7 @@
 
   <script src="../js/projects-data.js"></script>
   <script src="../js/projects-render.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/magnetic.js"></script>
 </body>
 </html>

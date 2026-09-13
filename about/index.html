@@ -6,12 +6,15 @@
   <title>About — Aitor Díez Mateo</title>
   <meta name="description" content="Background, experience, education, and skills of Aitor Díez Mateo.">
   <link rel="icon" href="../images/memoji_AitorDiez.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
   <!-- Navbar -->
-  <nav>
+  <nav class="nav-solid">
     <div class="nav-left">
       <a href="/" class="brand">Aitor Díez Mateo</a>
     </div>
@@ -38,13 +41,13 @@
       <div class="sidebar-content">
         <h3>On this page</h3>
         <ul class="sidebar-nav">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#achievements">Publications &amp; Achievements</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#introduction"><span class="sidebar-index">01</span>Introduction</a></li>
+          <li><a href="#experience"><span class="sidebar-index">02</span>Experience</a></li>
+          <li><a href="#education"><span class="sidebar-index">03</span>Education</a></li>
+          <li><a href="#achievements"><span class="sidebar-index">04</span>Publications &amp; Achievements</a></li>
+          <li><a href="#skills"><span class="sidebar-index">05</span>Skills</a></li>
+          <li><a href="#certifications"><span class="sidebar-index">06</span>Certifications</a></li>
+          <li><a href="#gallery"><span class="sidebar-index">07</span>Gallery</a></li>
         </ul>
       </div>
     </aside>
@@ -54,25 +57,23 @@
       <section id="introduction" class="about-section">
         <p class="section-eyebrow">About</p>
         <h1>Hi, I'm Aitor</h1>
-        <div class="intro-card">
-          <div class="intro-content">
-            <div class="profile-image">
-              <img src="../images/personal_image_01.jpg" alt="Aitor Díez Mateo - Personal Photo" />
-            </div>
-            <div class="intro-text-content">
-              <p class="intro-text">
-                I'm a final-year Computer Engineering and Data Science &amp; AI student at the University
-                of Deusto, applying machine learning to energy systems, optimization, and quantitative
-                problems. My work spans academic research at DeustoTech — three co-authored papers on
-                building energy forecasting and demand-side management — and an applied GenAI internship
-                at McKinsey QuantumBlack.
-              </p>
-              <p class="intro-text">
-                Outside of research and coursework, I care about ideas that hold up outside the notebook:
-                interpretable models, honest evaluation, and results that still make sense on real data.
-                I'm social by nature, competitive in sports, and enjoy building things end to end.
-              </p>
-            </div>
+        <div class="intro-row">
+          <div class="profile-image">
+            <img src="../images/personal_image_01.jpg" alt="Aitor Díez Mateo - Personal Photo" />
+          </div>
+          <div class="intro-text-content">
+            <p class="intro-text">
+              I'm a final-year Computer Engineering and Data Science &amp; AI student at the University
+              of Deusto, applying machine learning to energy systems, optimization, and quantitative
+              problems. My work spans academic research at DeustoTech — three co-authored papers on
+              building energy forecasting and demand-side management — and an applied GenAI internship
+              at McKinsey QuantumBlack.
+            </p>
+            <p class="intro-text">
+              Outside of research and coursework, I care about ideas that hold up outside the notebook:
+              interpretable models, honest evaluation, and results that still make sense on real data.
+              I'm social by nature, competitive in sports, and enjoy building things end to end.
+            </p>
           </div>
         </div>
       </section>
@@ -83,48 +84,60 @@
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-header">
-              <div>
-                <h3>Data Scientist Intern</h3>
-                <p class="company">McKinsey &amp; Company — QuantumBlack <span class="location">· Madrid, Spain</span></p>
-              </div>
-              <p class="duration">June 2026 – July 2026</p>
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-year">2026</span>
+              <span class="timeline-node"></span>
             </div>
-            <ul class="key-achievements">
-              <li>Built an end-to-end GenAI pipeline that automatically extracts customer intents and interaction patterns from call-center transcriptions, powering data-driven analytics for agent training and coaching programs at scale.</li>
-            </ul>
-            <div class="technologies">
-              <span class="tech-tag">GenAI</span>
-              <span class="tech-tag">LLMs</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NLP</span>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3>Data Scientist Intern</h3>
+                  <p class="company">McKinsey &amp; Company — QuantumBlack <span class="location">· Madrid, Spain</span></p>
+                </div>
+                <p class="duration">June 2026 – July 2026</p>
+              </div>
+              <ul class="key-achievements">
+                <li>Built an end-to-end GenAI pipeline that automatically extracts customer intents and interaction patterns from call-center transcriptions, powering data-driven analytics for agent training and coaching programs at scale.</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">GenAI</span>
+                <span class="tech-tag">LLMs</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+              </div>
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-header">
-              <div>
-                <h3>Machine Learning Research Intern</h3>
-                <p class="company">DeustoTech — Deusto Sustainable Research Group <span class="location">· Bilbao, Spain</span></p>
-              </div>
-              <p class="duration">Feb 2025 – June 2026</p>
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="timeline-year">2025</span>
+              <span class="timeline-node"></span>
             </div>
-            <p class="description">
-              Researched data-driven methods for building energy systems under the supervision of
-              <a href="https://www.robertogaray.com" target="_blank" rel="noopener noreferrer">Dr. Roberto Garay-Martinez</a>,
-              co-authoring three peer-reviewed papers (see <a href="#achievements">Publications</a>).
-            </p>
-            <ul class="key-achievements">
-              <li>Built a hybrid short-term load forecasting framework (K-Means clustering, SVM classification, regression) that decouples daily load shape from peak magnitude, reaching R² = 0.83 and a 26% improvement in explained variance over the strongest baseline.</li>
-              <li>Designed a rule-based method (ATBD) to identify residential EV charging events from aggregate household consumption, without sub-metering or private user data.</li>
-              <li>Developed a heat-pump demand-side management algorithm driven by wholesale electricity prices, cutting daily peak loads by up to 60% and annual energy costs by 2.5% on a real multi-rise building dataset.</li>
-            </ul>
-            <div class="technologies">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Time Series</span>
-              <span class="tech-tag">Clustering</span>
-              <span class="tech-tag">Forecasting</span>
-              <span class="tech-tag">Energy Systems</span>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <div>
+                  <h3>Machine Learning Research Intern</h3>
+                  <p class="company">DeustoTech — Deusto Sustainable Research Group <span class="location">· Bilbao, Spain</span></p>
+                </div>
+                <p class="duration">Feb 2025 – June 2026</p>
+              </div>
+              <p class="description">
+                Researched data-driven methods for building energy systems under the supervision of
+                <a href="https://www.robertogaray.com" target="_blank" rel="noopener noreferrer">Dr. Roberto Garay-Martinez</a>,
+                co-authoring three peer-reviewed papers (see <a href="#achievements">Publications</a>).
+              </p>
+              <ul class="key-achievements">
+                <li>Built a hybrid short-term load forecasting framework (K-Means clustering, SVM classification, regression) that decouples daily load shape from peak magnitude, reaching R² = 0.83 and a 26% improvement in explained variance over the strongest baseline.</li>
+                <li>Designed a rule-based method (ATBD) to identify residential EV charging events from aggregate household consumption, without sub-metering or private user data.</li>
+                <li>Developed a heat-pump demand-side management algorithm driven by wholesale electricity prices, cutting daily peak loads by up to 60% and annual energy costs by 2.5% on a real multi-rise building dataset.</li>
+              </ul>
+              <div class="technologies">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Time Series</span>
+                <span class="tech-tag">Clustering</span>
+                <span class="tech-tag">Forecasting</span>
+                <span class="tech-tag">Energy Systems</span>
+              </div>
             </div>
           </div>
         </div>
@@ -133,70 +146,69 @@
       <section id="education" class="about-section reveal">
         <p class="section-eyebrow">Education</p>
         <h2>Academic background</h2>
-        <div class="content-card">
-          <div class="education-item">
-            <div class="timeline-header">
-              <div>
-                <h3>Dual B.Sc. in Computer Engineering and Data Science &amp; AI</h3>
-                <p class="institution">University of Deusto, Bilbao, Spain</p>
-              </div>
-              <p class="duration">Sept 2022 – June 2027</p>
-            </div>
-            <p class="academic-stat">Average grade: <strong>9.30 / 10</strong></p>
 
-            <div class="honors">
-              <h4>Highest honors in ~40% of courses</h4>
-              <div class="honors-groups">
-                <div class="honors-group">
-                  <span class="honors-year">2026</span>
-                  <div class="tag-cloud">
-                    <span class="skill-item">NLP</span>
-                    <span class="skill-item">Reinforcement Learning</span>
-                    <span class="skill-item">Web Engineering</span>
-                    <span class="skill-item">Operating Systems</span>
-                    <span class="skill-item">Advanced Machine Learning</span>
-                    <span class="skill-item">Knowledge Management</span>
-                    <span class="skill-item">Software Design</span>
-                  </div>
+        <div class="education-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Dual B.Sc. in Computer Engineering and Data Science &amp; AI</h3>
+              <p class="institution">University of Deusto, Bilbao, Spain</p>
+            </div>
+            <p class="duration">Sept 2022 – June 2027</p>
+          </div>
+          <p class="academic-stat">Average grade: <strong>9.30 / 10</strong></p>
+
+          <div class="honors">
+            <h4>Highest honors in ~40% of courses</h4>
+            <div class="honors-groups">
+              <div class="honors-group">
+                <span class="honors-year">2026</span>
+                <div class="tag-cloud">
+                  <span class="skill-item">NLP</span>
+                  <span class="skill-item">Reinforcement Learning</span>
+                  <span class="skill-item">Web Engineering</span>
+                  <span class="skill-item">Operating Systems</span>
+                  <span class="skill-item">Advanced Machine Learning</span>
+                  <span class="skill-item">Knowledge Management</span>
+                  <span class="skill-item">Software Design</span>
                 </div>
-                <div class="honors-group">
-                  <span class="honors-year">2025</span>
-                  <div class="tag-cloud">
-                    <span class="skill-item">Information Advanced Modelling</span>
-                    <span class="skill-item">Big Data Processing (PySpark)</span>
-                    <span class="skill-item">Deep Learning (PyTorch)</span>
-                  </div>
+              </div>
+              <div class="honors-group">
+                <span class="honors-year">2025</span>
+                <div class="tag-cloud">
+                  <span class="skill-item">Information Advanced Modelling</span>
+                  <span class="skill-item">Big Data Processing (PySpark)</span>
+                  <span class="skill-item">Deep Learning (PyTorch)</span>
                 </div>
-                <div class="honors-group">
-                  <span class="honors-year">2024</span>
-                  <div class="tag-cloud">
-                    <span class="skill-item">Databases (SQL)</span>
-                    <span class="skill-item">Application Programming (Java)</span>
-                    <span class="skill-item">Programming Methodology &amp; Languages</span>
-                    <span class="skill-item">Data Science (R)</span>
-                    <span class="skill-item">Advanced Statistics</span>
-                    <span class="skill-item">Low-Level Programming (C/C++)</span>
-                  </div>
+              </div>
+              <div class="honors-group">
+                <span class="honors-year">2024</span>
+                <div class="tag-cloud">
+                  <span class="skill-item">Databases (SQL)</span>
+                  <span class="skill-item">Application Programming (Java)</span>
+                  <span class="skill-item">Programming Methodology &amp; Languages</span>
+                  <span class="skill-item">Data Science (R)</span>
+                  <span class="skill-item">Advanced Statistics</span>
+                  <span class="skill-item">Low-Level Programming (C/C++)</span>
                 </div>
-                <div class="honors-group">
-                  <span class="honors-year">2023</span>
-                  <div class="tag-cloud">
-                    <span class="skill-item">Calculus</span>
-                    <span class="skill-item">Computer Structure</span>
-                  </div>
+              </div>
+              <div class="honors-group">
+                <span class="honors-year">2023</span>
+                <div class="tag-cloud">
+                  <span class="skill-item">Calculus</span>
+                  <span class="skill-item">Computer Structure</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="education-item education-item-secondary">
-            <div class="timeline-header">
-              <div>
-                <h3>Academic Exchange Program</h3>
-                <p class="institution">Wilfrid Laurier University, Waterloo, ON, Canada</p>
-              </div>
-              <p class="duration">Sept 2026 – Dec 2026</p>
+        <div class="education-item education-item-secondary">
+          <div class="timeline-header">
+            <div>
+              <h3>Academic Exchange Program</h3>
+              <p class="institution">Wilfrid Laurier University, Waterloo, ON, Canada</p>
             </div>
+            <p class="duration">Sept 2026 – Dec 2026</p>
           </div>
         </div>
       </section>
@@ -205,23 +217,21 @@
         <p class="section-eyebrow">Recognition</p>
         <h2>Publications &amp; Achievements</h2>
 
-        <div class="content-card">
-          <h4 class="subsection-title">Publications</h4>
-          <ul class="publications-list">
-            <li>
-              <span class="pub-title">Hybrid Machine Learning Approach for Short-Term Load Forecasting in Small Commercial Buildings</span>
-              <span class="pub-venue">ITISE 2026 (Engineering Proceedings, MDPI)</span>
-            </li>
-            <li>
-              <span class="pub-title">Algorithmic Thresholding and Baseline Detection for Residential EV Charging Event Identification</span>
-              <span class="pub-venue">Splitech 2026</span>
-            </li>
-            <li>
-              <span class="pub-title">Structured Analysis of Heat Pump Usage in Buildings and Load Optimization for Optimal Management of Loads</span>
-              <span class="pub-venue">Splitech 2026</span>
-            </li>
-          </ul>
-        </div>
+        <h4 class="subsection-title">Publications</h4>
+        <ul class="publications-list">
+          <li>
+            <span class="pub-title">Hybrid Machine Learning Approach for Short-Term Load Forecasting in Small Commercial Buildings</span>
+            <span class="pub-venue">ITISE 2026 (Engineering Proceedings, MDPI)</span>
+          </li>
+          <li>
+            <span class="pub-title">Algorithmic Thresholding and Baseline Detection for Residential EV Charging Event Identification</span>
+            <span class="pub-venue">Splitech 2026</span>
+          </li>
+          <li>
+            <span class="pub-title">Structured Analysis of Heat Pump Usage in Buildings and Load Optimization for Optimal Management of Loads</span>
+            <span class="pub-venue">Splitech 2026</span>
+          </li>
+        </ul>
 
         <div class="achievements-grid">
           <div class="achievement-item">
@@ -246,62 +256,60 @@
 
       <section id="skills" class="about-section reveal">
         <p class="section-eyebrow">Toolbox</p>
-        <h2>Skills &amp; Technologies</h2>
-        <div class="content-card">
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3>Languages</h3>
-              <div class="skills-list">
-                <span class="skill-item">Python</span>
-                <span class="skill-item">R</span>
-                <span class="skill-item">Java</span>
-                <span class="skill-item">C/C++</span>
-                <span class="skill-item">SQL</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Machine Learning &amp; AI</h3>
-              <div class="skills-list">
-                <span class="skill-item">PyTorch</span>
-                <span class="skill-item">Scikit-learn</span>
-                <span class="skill-item">XGBoost</span>
-                <span class="skill-item">Optuna</span>
-                <span class="skill-item">OpenCV</span>
-                <span class="skill-item">LangChain</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Data &amp; Visualization</h3>
-              <div class="skills-list">
-                <span class="skill-item">Pandas</span>
-                <span class="skill-item">NumPy</span>
-                <span class="skill-item">PySpark</span>
-                <span class="skill-item">Matplotlib</span>
-                <span class="skill-item">Grafana</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Tools &amp; Platforms</h3>
-              <div class="skills-list">
-                <span class="skill-item">Git</span>
-                <span class="skill-item">Docker</span>
-                <span class="skill-item">AWS</span>
-                <span class="skill-item">Linux</span>
-                <span class="skill-item">Jupyter</span>
-              </div>
+        <h2>Skills &amp; technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skills-list">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">R</span>
+              <span class="skill-item">Java</span>
+              <span class="skill-item">C/C++</span>
+              <span class="skill-item">SQL</span>
             </div>
           </div>
 
-          <div class="languages-row">
-            <h3>Languages spoken</h3>
+          <div class="skill-category">
+            <h3>Machine Learning &amp; AI</h3>
             <div class="skills-list">
-              <span class="skill-item">Spanish — Native</span>
-              <span class="skill-item">English — C1</span>
-              <span class="skill-item">Basque — B2</span>
+              <span class="skill-item">PyTorch</span>
+              <span class="skill-item">Scikit-learn</span>
+              <span class="skill-item">XGBoost</span>
+              <span class="skill-item">Optuna</span>
+              <span class="skill-item">OpenCV</span>
+              <span class="skill-item">LangChain</span>
             </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Data &amp; Visualization</h3>
+            <div class="skills-list">
+              <span class="skill-item">Pandas</span>
+              <span class="skill-item">NumPy</span>
+              <span class="skill-item">PySpark</span>
+              <span class="skill-item">Matplotlib</span>
+              <span class="skill-item">Grafana</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="skills-list">
+              <span class="skill-item">Git</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">Linux</span>
+              <span class="skill-item">Jupyter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="languages-row">
+          <h3>Languages spoken</h3>
+          <div class="skills-list">
+            <span class="skill-item">Spanish — Native</span>
+            <span class="skill-item">English — C1</span>
+            <span class="skill-item">Basque — B2</span>
           </div>
         </div>
       </section>
@@ -309,46 +317,44 @@
       <section id="certifications" class="about-section reveal">
         <p class="section-eyebrow">Credentials</p>
         <h2>Certifications</h2>
-        <div class="content-card">
-          <div class="certifications-list">
-            <div class="certification-item">
-              <h3>Applied Data Science with Python</h3>
-              <p class="issuer">IBM · July 2024</p>
-              <a href="https://www.credly.com/badges/0ee5ddd1-720f-49b5-bfc7-a875408defda/linked_in_profile" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
-            </div>
+        <div class="certifications-list">
+          <div class="certification-item">
+            <h3>Applied Data Science with Python</h3>
+            <p class="issuer">IBM · July 2024</p>
+            <a href="https://www.credly.com/badges/0ee5ddd1-720f-49b5-bfc7-a875408defda/linked_in_profile" class="verification-link" target="_blank" rel="noopener noreferrer">View credential</a>
+          </div>
 
-            <div class="certification-item">
-              <h3>Data Analysis with Python</h3>
-              <p class="issuer">IBM · July 2024</p>
-              <a href="https://courses.cognitiveclass.ai/certificates/33f4c48a45db4babb07e57ef11466d82" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
-            </div>
+          <div class="certification-item">
+            <h3>Data Analysis with Python</h3>
+            <p class="issuer">IBM · July 2024</p>
+            <a href="https://courses.cognitiveclass.ai/certificates/33f4c48a45db4babb07e57ef11466d82" class="verification-link" target="_blank" rel="noopener noreferrer">View credential</a>
+          </div>
 
-            <div class="certification-item">
-              <h3>Data Visualization with Python</h3>
-              <p class="issuer">IBM · July 2024</p>
-              <a href="https://courses.cognitiveclass.ai/certificates/5682766b2a1f4cb58f9acf8cb524a215" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
-            </div>
+          <div class="certification-item">
+            <h3>Data Visualization with Python</h3>
+            <p class="issuer">IBM · July 2024</p>
+            <a href="https://courses.cognitiveclass.ai/certificates/5682766b2a1f4cb58f9acf8cb524a215" class="verification-link" target="_blank" rel="noopener noreferrer">View credential</a>
+          </div>
 
-            <div class="certification-item">
-              <h3>Python for Data Science</h3>
-              <p class="issuer">IBM · July 2024</p>
-              <a href="https://courses.cognitiveclass.ai/certificates/9c72fe6a45ba47abaf7e7c2386e44f74" class="verification-link" target="_blank" rel="noopener noreferrer">View Credential</a>
-            </div>
+          <div class="certification-item">
+            <h3>Python for Data Science</h3>
+            <p class="issuer">IBM · July 2024</p>
+            <a href="https://courses.cognitiveclass.ai/certificates/9c72fe6a45ba47abaf7e7c2386e44f74" class="verification-link" target="_blank" rel="noopener noreferrer">View credential</a>
+          </div>
 
-            <div class="certification-item">
-              <h3>Academy Accreditation: Generative AI Fundamentals</h3>
-              <p class="issuer">Databricks</p>
-            </div>
+          <div class="certification-item">
+            <h3>Academy Accreditation: Generative AI Fundamentals</h3>
+            <p class="issuer">Databricks</p>
+          </div>
 
-            <div class="certification-item">
-              <h3>Academy Accreditation: AI Agent Fundamentals</h3>
-              <p class="issuer">Databricks</p>
-            </div>
+          <div class="certification-item">
+            <h3>Academy Accreditation: AI Agent Fundamentals</h3>
+            <p class="issuer">Databricks</p>
+          </div>
 
-            <div class="certification-item">
-              <h3>Introduction to LangChain</h3>
-              <p class="issuer">LangChain</p>
-            </div>
+          <div class="certification-item">
+            <h3>Introduction to LangChain</h3>
+            <p class="issuer">LangChain</p>
           </div>
         </div>
       </section>
@@ -376,12 +382,14 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Aitor Díez Mateo |
+    <p>© 2026 Aitor Díez Mateo ·
        <a href="https://www.linkedin.com/in/aitordiezmateo">LinkedIn</a> ·
        <a href="https://github.com/aitorDiezMateo">GitHub</a>
     </p>
   </footer>
 
+  <script src="../js/nav.js"></script>
+  <script src="../js/magnetic.js"></script>
   <script src="../js/reveal.js"></script>
 </body>
 </html>
