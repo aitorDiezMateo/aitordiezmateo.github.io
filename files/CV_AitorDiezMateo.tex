@@ -1,0 +1,128 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[top=1.1cm,bottom=1.1cm,left=1.7cm,right=1.7cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+% ---- Color ----
+\definecolor{accent}{HTML}{1E4D8C}
+
+% ---- Page ----
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{0.94}\selectfont
+
+% ---- Section formatting ----
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\color{accent}\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+% ---- Links ----
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% ---- Lists ----
+\setlist[itemize]{leftmargin=1.15em, topsep=0pt, itemsep=0pt, parsep=0pt, label=\textbullet}
+
+% ---- Helper macros for entry headers ----
+\newcommand{\cvheader}[2]{\textbf{#1} \hfill #2\\}
+\newcommand{\cvsubheader}[2]{\textit{#1} \hfill \textit{#2}\\[-10pt]}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+{\Huge \textbf{Aitor Diez Mateo}}\\[5pt]
+{\small Vitoria-Gasteiz, Spain \ \textbullet\ \href{mailto:aitor10mateo@gmail.com}{aitor10mateo@gmail.com} \ \textbullet\ +34 688 68 07 38}\\[2pt]
+{\small 
+\href{https://aitordiezmateo.github.io}{aitordiezmateo.github.io} \ 
+\textbullet\ \href{https://www.linkedin.com/in/aitordiezmateo}{LinkedIn} \ \textbullet\ \href{https://github.com/aitorDiezMateo}{GitHub}
+}
+\end{center}
+
+\vspace{3pt}
+
+\noindent Final-year Computer Engineering and Data Science \& AI student with applied machine learning experience spanning academic energy-systems research and industry data science.
+
+% ================= EDUCATION =================
+\section{Education}
+
+\cvheader{University of Deusto}{Bilbao, Spain}
+% Escribimos el formato directamente para controlar el salto de línea al milímetro
+\textit{Dual B.Sc. in Computer Engineering and Data Science \& Artificial Intelligence} \hfill \textit{Sept 2022 -- June 2027}\\[4pt] 
+\noindent Average grade: \textbf{9.30/10}
+
+\vspace{3pt}
+\textit{Highest Honors in $\sim$40\% of courses:}\\[1pt]
+\textbf{2026:} NLP, Reinforcement Learning, Web Engineering, Operating Systems, Advanced Machine Learning, Knowledge Management, Software Design\\
+\textbf{2025:} Information Advanced Modelling, Big Data Processing (PySpark), Deep Learning (PyTorch)\\
+\textbf{2024:} Databases (SQL), Application Programming (Java), Programming Methodology \& Languages, Data Science (R), Advanced Statistics, Low-Level Programming (C/C++)\\
+\textbf{2023:} Calculus, Computer Structure
+
+\vspace{2pt}
+\cvheader{Wilfrid Laurier University}{Waterloo, ON, Canada}
+\cvsubheader{Academic Exchange Program}{Sept 2026 -- Dec 2026}
+
+% ================= EXPERIENCE =================
+\section{Experience}
+
+\cvheader{McKinsey \& Company --- QuantumBlack}{Madrid, Spain}
+\cvsubheader{Data Scientist Intern}{June 2026 -- July 2026}
+\begin{itemize}
+    \item Built an end-to-end GenAI pipeline that automatically extracts customer intents and interaction patterns from call-center transcriptions, powering data-driven analytics for agent training and coaching programs at scale.
+\end{itemize}
+
+\vspace{2pt}
+\cvheader{DeustoTech --- Deusto Sustainable Research Group}{Bilbao, Spain}
+\cvsubheader{Machine Learning Research Intern}{Feb 2025 -- June 2026}
+\begin{itemize}
+    \item Co-authored three research outputs on data science applied to building energy systems, under the supervision of Dr.\ Roberto Garay-Martinez \textit{(see Publications)}.
+    \item Built a hybrid short-term load forecasting framework (K-Means clustering, SVM classification, regression) that decouples daily load shape from peak magnitude, achieving $R^2=0.83$ and a 26\% improvement in explained variance over the strongest baseline, across ARIMAX, Prophet, and zero-shot foundation models (TimesFM, Chronos).
+    \item Designed a rule-based Algorithmic Thresholding and Baseline Detection (ATBD) method to identify residential EV charging events from aggregate household consumption, without sub-metering or private user data.
+    \item Developed a heat-pump demand-side management algorithm driven by Spanish wholesale electricity prices, reducing daily peak loads by up to 60\% and annual energy costs by 2.5\% on a real multi-rise building dataset.
+\end{itemize}
+
+% ================= PUBLICATIONS =================
+\section{Publications}
+
+{\small
+\textbf{A. Diez Mateo}, R. Garay-Martinez, C.E. Borges, A. García Garre. ``Hybrid Machine Learning Approach for Short-Term Load Forecasting in Small Commercial Buildings.'' \textit{ITISE 2026} (Engineering Proceedings, MDPI).\\[1pt]
+\textbf{A. Diez Mateo}, M. Perrin, R. Garay-Martinez, J.I. García Quintanilla. ``Algorithmic Thresholding and Baseline Detection for Residential EV Charging Event Identification.'' \textit{Splitech 2026}\\[1pt]
+\textbf{A. Diez Mateo}, R. Garay-Martinez, J.I. García Quintanilla. ``Structured Analysis of Heat Pump Usage in Buildings and Load Optimization for Optimal Management of Loads.'' \textit{Splitech 2026}
+
+% ================= ACHIEVEMENTS =================
+\section{Achievements}
+
+\cvheader{IBM OA6 University Challenge 2026}{June 2026}
+National Finalist in the IBM Entrepreneurship, Innovation, and Consulting challenge, having advanced from the University of Deusto stage to architect \textit{Repsol Apex}--- a contextual Agentic AI solution driving enterprise-wide transformation—under the months-long direct mentorship of IBM Consulting and Repsol's Head of Data \& AI.
+
+\cvheader{Ikasiker Research Fellowship --- Basque Government}{Jan 2026 --- June 2026}
+\textit{Department of Education | DeustoTech - Instituto Tecnológico Deusto}\\[2pt]
+Awarded a competitive research grant for academic excellence, ranking 1\textsuperscript{st} in the Faculty of Engineering and 2\textsuperscript{nd} university-wide.
+
+% ================= SKILLS =================
+\section{Skills \& Interests}
+
+\textbf{Technical:} High proficiency in Python (incl. ML frameworks \& libraries); intermediate in R, Java \& C/C++.\\
+\textbf{Languages:} Spanish (native), English (advanced --- CAE C1, 2021), Basque (intermediate --- B2, 2022)\\
+\textbf{Certifications:}\\[1pt]
+\noindent\begin{minipage}[t]{0.4\textwidth}
+\begin{itemize}
+    \item Applied Data Science with Python --- IBM
+    \item Data Analysis with Python --- IBM
+    \item Data Visualization with Python --- IBM 
+    \item Python for Data Science --- IBM
+\end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.60\textwidth}
+\begin{itemize}
+    \item Academy Accreditation: Generative AI Fundamentals --- Databricks
+    \item Academy Accreditation: AI Agent Fundamentals --- Databricks
+    \item Introduction to LangChain --- LangChain
+\end{itemize}
+\end{minipage}
+
+\end{document}
