@@ -1,5 +1,4 @@
 // Project metadata for the Projects page.
-// `link` is intentionally left empty until repositories are published.
 window.PROJECTS = [
   {
     folder: "Simpsons-DaVinci",
@@ -8,7 +7,7 @@ window.PROJECTS = [
     tags: ["Python", "PyTorch", "GANs", "Computer Vision"],
     image: "../images/simpsons.jpg",
     imageAlt: "Grid of GAN-generated Simpsons character faces in the show's cartoon style",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/Simpsons-DaVinci"
   },
   {
     folder: "algorithmic-thresholding-and-baseline-detection-for-ev-charging-detection",
@@ -18,7 +17,7 @@ window.PROJECTS = [
     image: "../images/ev_charging_baseline_threshold.svg",
     imageAlt: "Household power consumption with adaptive baseline and dynamic charging threshold overlaid",
     imagePosition: "left center",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/algorithmic-thresholding-and-baseline-detection-for-ev-charging-detection"
   },
   {
     folder: "clustering-hybrid-load-forecasting",
@@ -28,7 +27,7 @@ window.PROJECTS = [
     image: "../images/load_forecasting_model_comparison.png",
     imageAlt: "Predicted vs actual energy consumption for the hybrid model against ARIMAX, Prophet, and Chronos baselines",
     imagePosition: "left center",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/clustering-hybrid-load-forecasting"
   },
   {
     folder: "heat-pump-analysis-and-load-optimization",
@@ -37,7 +36,7 @@ window.PROJECTS = [
     tags: ["Python", "Optimization", "Energy Systems"],
     image: "../images/heat_pump_load_shifting.svg",
     imageAlt: "Original vs price-shifted heat pump load profile against the electricity price curve for a single day",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/heat-pump-analysis-and-load-optimization"
   },
   {
     folder: "HEDGING_RL",
@@ -46,7 +45,7 @@ window.PROJECTS = [
     tags: ["Python", "PyTorch", "Reinforcement Learning", "Optuna"],
     image: "../images/hedging_cumulative_pnl.png",
     imageAlt: "Cumulative P&L of the RL hedging agent versus a Black-Scholes delta-hedging benchmark over 2012",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/DeepHedging"
   },
   {
     folder: "News2Stock",
@@ -55,7 +54,7 @@ window.PROJECTS = [
     tags: ["Python", "PyTorch", "NLP", "FinBERT"],
     image: "../images/news2stock_confusion_matrix.png",
     imageAlt: "Confusion matrix of the attention-based fusion model predicting next-day stock direction",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/News2StockPredictor"
   },
   {
     folder: "SMARTCO-DeliveryStatus-Prediction",
@@ -64,6 +63,6 @@ window.PROJECTS = [
     tags: ["Python", "XGBoost", "CatBoost", "Optuna"],
     image: "../images/delivery_status_mitigation_heatmap.png",
     imageAlt: "Heatmap of mean cross-validated macro-F1 by model type and imbalance-mitigation strategy",
-    link: ""
+    link: "https://github.com/aitorDiezMateo/delivery-status-prediction"
   }
 ];
